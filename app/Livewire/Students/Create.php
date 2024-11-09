@@ -16,7 +16,7 @@ class Create extends Component
 
     public function render()
     {
-        return view('livewire.student.create',[
+        return view('livewire.students.create',[
         'classes' => Classes::all()
         ]);
     }
@@ -44,4 +44,5 @@ class Create extends Component
         
         return $this->redirect(Index::class, navigate: true);
     }
+
 }

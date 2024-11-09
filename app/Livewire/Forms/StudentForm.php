@@ -22,10 +22,10 @@ class StudentForm extends Form
     public function rules()
     {
         return [
-            'name' => 'required',
+            'name' => 'required|string|max:255',
             'email' => 'required|email|unique:students,email',
-            'class_id' => 'required',
-            'section_id' => 'required'
+            'class_id' => 'required|integer',
+            'section_id' => 'required|integer'
         ];
     }
 
