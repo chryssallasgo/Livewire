@@ -7,12 +7,12 @@
 
     <div class="py-12">
         <div class="mx-auto space-y-5 max-w-7xl sm:px-6 lg:px-8">
-            <div class="flex overflow-hidden bg-white shadow-sm dark:bg-emerald-900 sm:rounded-lg">
+            <div class="flex overflow-hidden bg-white shadow-sm dark:bg-teal-900 sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{ __("Welcome Back!") }}
                 </div>
             </div>
-            <div class="max-w-xs rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-emerald-800">
+            <div class="max-w-xs rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-teal-800">
                  <img
                  src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
                  class="rounded-t-lg"

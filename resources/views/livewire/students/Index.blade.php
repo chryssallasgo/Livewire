@@ -34,7 +34,7 @@
                               </thead>
                               <tbody>
                                   @foreach($students as $student)
-                                      <tr class="odd:bg-white even:bg-gray-100 hover:bg-gray-100 dark:odd:bg-neutral-800 dark:even:bg-neutral-700 dark:hover:bg-neutral-700">
+                                      <tr class="odd:bg-white even:bg-gray-100 hover:bg-gray-100 dark:odd:bg-emerald-800 dark:even:bg-emerald-700 dark:hover:bg-emerald-950">
                                           <td class="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap dark:text-neutral-200">{{ $student->id }}</td>
                                           <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap dark:text-neutral-200">{{ $student->name }}</td>
                                           <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap dark:text-neutral-200">{{ $student->email }}</td>
