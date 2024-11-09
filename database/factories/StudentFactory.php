@@ -18,7 +18,7 @@ class StudentFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'email' => fake()->safeEmail()
+            'email' => fake()->unique()->safeEmail()
         ];
     }
 }
