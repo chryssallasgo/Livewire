@@ -2,11 +2,15 @@
 
 namespace App\Livewire\Forms;
 
+use App\Models\Student;
 use Livewire\Attributes\Validate;
 use Livewire\Form;
 
 class StudentForm extends Form
 {
+
+    public ?Student $student;
+
     #[Validate]
     public $name;
 
@@ -21,12 +25,18 @@ class StudentForm extends Form
 
     public function rules()
     {
-        return [
-            'name' => 'required|string|max:255',
+        $rules = [
+            'name' => 'required',
             'email' => 'required|email|unique:students,email',
-            'class_id' => 'required|integer',
-            'section_id' => 'required|integer'
+            'class_id' => 'required',
+            'section_id' => 'required'
         ];
+        if(isset($this->student)){
+            $rules['email'] = 'required|email|unique:students,email,'. $this->student->id;
+        }
+
+        return $rules;
+
     }
 
     public function messages()
@@ -37,4 +47,12 @@ class StudentForm extends Form
         ];
     }
 
+    public function setStudent(Student $student)
+    {
+        $this->student = $student;
+        $this->name = $student->name;
+        $this->email = $student->email;
+        $this->class_id = $student->class_id;
+        $this->section_id = $student->section_id;
+    }
 }

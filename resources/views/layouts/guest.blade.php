@@ -22,7 +22,7 @@
                 </a>
             </div>
 
-            <div class="w-full px-6 py-4 mt-6 overflow-hidden bg-white shadow-md sm:max-w-md dark:bg-gradient-to-t from-teal-800 to-teal-500 sm:rounded-lg">
+            <div class="w-full px-6 py-4 mt-6 overflow-hidden bg-white shadow-md sm:max-w-md dark:bg-gradient-to-t from-blue-800 to-sky-500 sm:rounded-lg">
                 {{ $slot }}
             </div>
         </div>
