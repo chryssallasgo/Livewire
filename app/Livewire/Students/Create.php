@@ -40,7 +40,7 @@ class Create extends Component
             $this->form->all()
         );
         
-       // flash()->success('Student added successfully');
+       flash()->success('Student added successfully');
         
         return $this->redirect(Index::class, navigate: true);
     }
